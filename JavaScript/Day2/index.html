@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for(i=0;i<5;i++){
+        //     console.log("Hello World" ,i);
+        // }
+
+        // for(i=2;i<=20;i+=3){
+        //     console.log(i);
+        // }
+
+        // for(i=2;i<=20;++i){
+        //     console.log(i);
+        // }
+
+        // let i=0;
+        // while(i<5){
+        //     console.log("Hello world",i);
+        //     i++;
+        // }
+
+        // let i=5;
+        // while(i--){
+        //     console.log(i);
+        // }
+
+        // let num = 20;
+        // let newnum = num--;
+        // let x = newnum;
+        // console.log(num,newnum,x);
+
+        // let num =7;
+        // let fact = 1;
+        // while(num>=1){
+        //     fact = fact*num;
+        //     num--;
+        // }
+        // console.log(fact);
+
+        // let i=2;
+        // do{
+        //     console.log(i);
+        //     i+=3;   
+        // }
+        // while(i<=5);
+
+        // let arr = [1,2,3,4,5];
+        // console.log(arr);
+        // console.log(typeof(arr));
+
+        // let arr = [1,2,3,4,5];
+        // console.log(Array.isArray(arr));
+
+        // let a=1;
+        // console.log(Array.isArray(a));
+
+
+        // let arr = [1,2,"Bhuvanesh",[1,2,3],false];
+        // console.log(arr[2]);
+        // arr[5] = null;
+        // console.log(arr[5]);
+        // arr[2] = "hello"
+        // console.log(arr[2]);
+
+        // console.log(arr);
+        // arr.push("bhuvanesh");
+        // arr[length] = "hii";
+        // console.log(arr);
+        // console.log(arr[0]);
+        // console.log(arr[5]);
+
+        // console.log(arr.pop());
+        // console.log(arr);
+
+        // arr.unshift("bhuvanesh");
+        // console.log(arr);
+
+
+        // rotate an array n times
+
+        // let arr = [1,2,3,4,5];
+        // for(i=0;i<2;i++){
+        //     arr.unshift(arr.pop());
+        // }
+        // console.log(arr);
+
+        // let arr = [1,2,3,4,5];
+        // for(i=0;i<2;i++){
+        //     arr.push(arr.shift());
+        // }
+        // console.log(arr);
+
+        // let arr= [1,2,3,4,5];
+        // let newarr = arr ;
+        // newarr.push(6);
+        // console.log(newarr ,arr);
+        // console.log(arr.indexOf(5));
+        // console.log(arr.indexOf(7));
+
+        // let arr=[ 1,2,3,4];
+        // let newarr = [5,6,7,8];
+        // arr.push(newarr);
+        // console.log(arr);
+
+        // for(i=arr.length;i<arr.length+newarr.length;i++){
+        //     arr[i] = newarr[i-arr.length];
+        // }
+        // console.log(arr.concat(newarr));
+
+        // let arr = [1,2,3,4,[9,10,11,[12,13]]];
+        // let newarr = [5,6,7,8];
+        // arr.push(newarr);
+        // console.log(arr.flat(2));
+
+        // let obj = {};
+        // let symb = Symbol("secret");
+        // obj =  {
+        //     name : "Bhuvanesh",
+        //     "full name" : "Bhuvanesh vashishth",
+        //     age : 22,
+        //     city : "Mathura",
+        //     [symb] : "Password"
+        // }
+        // obj.university = "GLA"
+        // console.log(obj);
+        // console.log(obj[symb]);
+
+        // why we use square bracket 
+
+       // obj.full name = "Bhuvanesh vashishth"; gives error
+
+        // obj["full name"] = "Bhuvanesh vashishth";    
+        // console.log(obj);
+
+        // let count =0;
+        // for(let key in obj){
+        //     console.log(key," ", obj[key]);
+        //     count++;
+        // }
+        // console.log(count);
+
+        // console.log(Object.keys(obj));
+        // console.log(Object.values(obj));
+        // console.log(Object.entries(obj));   
+
+        let obj ={
+            name1 :"Bhuvanesh",
+            age1 :20,
+            profession1:"student"
+        }
+        let newObj = {
+            name2 :"kushal",
+            age2:23,
+            profession2:"student"
+        }
+
+        // assign objeect to another object
+        // let brothers = Object.assign({}, obj,newObj);
+        // console.log(brothers);
+        // console.log(obj);
+
+        // combined using spread operator
+        // let brothers = {...obj,...newObj};
+        // console.log(brothers);
+
+        // console.log(obj);
+
+
+        // let arr = [1,2,3,4];
+        // let newArr = [5,6,7,8];
+        // let combined = [...arr,...newArr];
+        // console.log(combined);
+
+
+        // let arr  = prompt("give me an array")
+        
+        // console.log(arr.split(",").map(Number));
+    </script>
+</body>
+</html>

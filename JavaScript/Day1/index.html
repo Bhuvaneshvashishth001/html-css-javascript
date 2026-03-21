@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log("Hello World");
+
+        // in var we can reassign and redeclare the variable.
+
+        // 1- redeclaring the variable
+        // var num =20;
+        // var num = 30;
+        // console.log(num);
+
+        // 2- reassigning the variable
+        // var num1 = 10;
+        // num1 = 15;
+        // console.log(num1);
+
+        // in let we can reassign but we cannot redeclare the variable.
+
+        // 1- redeclaring the variable gives error.
+        // let num2 =20;
+        // let num2 =30;
+        // console.log(num2);
+
+        // 2- reassigning the variable
+        // let num2 =10;
+        // num2 = 15;
+        // console.log(num2);
+
+        // var is function scoped and let is block scoped.
+        
+        // let x = 20
+        // {
+        //     let x =50;
+        //     console.log(x);
+        // }
+        // console.log(x);
+
+        // {
+        //     let x =20;
+        //     console.log(x);
+        // }
+        // console.log(x);
+
+        // var a =10;
+        // {
+        //     console.log(a);
+        // }
+
+        // var a = 10;
+        // {
+        //     var a = 20;
+        //     console.log(a);
+        // }   
+        // console.log(a);
+
+        // {
+        //     console.log(a); udefined
+        //     var a = 20;
+        // }
+        // console.log(a); 20
+
+        // const a=20;
+        // const a=30; // This would cause an error because a is already declared as a constant
+        // console.log(a);
+
+        // const a = 20;
+        // a=50; // This would cause an error because you cannot reassign a value to a constant variable
+        // console.log(a);
+
+
+        // const a = 20;
+        // {
+        //     const a = 50; // This is allowed because it's a different block scope
+        //     console.log(a); // Output: 50
+        // }
+
+        // const a=40;
+        //     {
+        //         a=50;
+        //         console.log(a); // error because you cannot reassign a value to a constant variable
+        //     }
+        //     console.log(a);
+
+        // console.log("12"+11);
+        // console.log(12+11);
+        // console.log("12"-11);
+        // console.log("12"*11);
+
+        // console.log("abc"-11);
+
+        //  console.log(1 & 1);
+        //  console.log(20 && 1 && 30)
+        //  console.log(1&"abc");  //output =0;
+        //  console.log(1&null)  //output =0;
+        //  console.log(undefined && null); //output =undefined;
+        //  console.log(null && undefined); //output =null;
+        //  console.log(1 && null); //output =null;
+        //  console.log(1 || (null && undefined)); //output =1; 
+        //  console.log(1 && [] && {}); //output ={};
+        //  console.log(1 && 20 && null); //output =null;
+
+
+        // let age = prompt("Tell me your age");
+        // console.log(age);
+        // let age = prompt("Tell me your age");
+        // console.log(Number(age) +12); output = if(age = 20) then 32; if(age = "20") then also 32 because Number("20") will convert the string "20" to the number 20 before performing the addition.
+        // let age = prompt("Tell me your age");
+        // console.log(age +12); outputif (trigger age = 20) then 2012; if(age = "20") then also 2012 because when you use the + operator with a string and a number, JavaScript will convert the number to a string and concatenate them together. So in this case, the number 12 will be converted to the string "12" and concatenated with the string "20", resulting in "2012".
+
+        // let age = prompt("Tell me your age");
+        // if(age >= 18){
+        //     console.log("you are eligible for vote");
+        // }
+        // if(age == 18){
+        //     console.log("you are new voter");
+        // }
+        // else{
+        //     console.log("you are not eligible for vote");
+        // }
+
+        // let x = 20 , y=40;
+        // console.log(x>y ? x:y);
+
+        // let x=1200,
+        // y=500,z=2300;
+        // console.log( (x>y&&x>z)?x:(y>z)?y:z)
+
+
+        //Concept of hoisting in JavaScript:
+
+
+        // console.log(a);
+        // var a= 20;
+
+        // var a =1;
+        // function printValue() {
+        //     console.log(a);
+        //     //var a =2;
+        // }
+        // printValue();
+
+        var a=1;
+        function test(){
+            console.log(a);
+            let a=2;
+        }
+        test();
+    </script>
+</body>
+</html>

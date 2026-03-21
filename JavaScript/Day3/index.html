@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // start functions
+
+        // function fun(){
+        //  console.log("s");
+        //  console.log("u");
+        //  console.log("b");
+        //  console.log("h");  
+        //  console.log("a");
+        //  console.log("m");
+        // }   
+        // fun();
+        // console.log("Hello World"); 
+        // fun();
+
+        // function addition(a,b){
+        //     console.log(a+b);
+        // }
+        // addition(1,2);
+        // addition(12,"14");
+        // addition(30);
+
+        // function add(a,b){
+        //     return (a+b);
+        // }
+        // console.log(add(12,14));
+
+
+        // function add(num1,num2){
+        //     if(typeof num1 != "number" || typeof num2 != "number"){
+        //         console.log("Please provide numbers only");
+        //         return;
+        //     }
+        //     console.log(num1+num2);
+        // }
+        // add(12,16);
+
+        // function sum(a,b){
+        //     console.log(`sum is ${a+b}`);
+        //     console.log("sum is "+20+30);
+        // }
+        // sum(20,30);
+
+        // function salary(...income){
+        //     let total=0;
+        //     for(let i in income){
+        //         total += income[i];
+        //     }
+        //     console.log(total);
+        // }
+        // salary(500,1000,2000,2500);
+
+        // let sayHello = function(){
+        //     console.log("Hello");
+        // };
+        // sayHello();
+
+        // sayName();
+        // function sayName(){
+        //     console.log("Bhuvanesh Vashishth");
+        // }
+
+        // sayName1();
+        // var sayName1 = function(){
+        //     console.log("Bhuvnesh vashishth");
+        // }
+
+        // console.log(sayName1);
+        // var sayName1 = function(){
+        //     console.log("Bhuvnesh vashishth");
+        // }
+
+        // let sum = (a,b)=>{
+        //     return a+b;
+        // }
+        // console.log(sum(2,3));
+
+        // let sum2 = (a,b)=>a+b;
+        // console.log(sum2(2,5));
+
+
+        // (function(){
+        //     console.log("Hello World!");
+        // })();
+
+        // function calculator(a,b,opr){
+        //     return opr(a,b);
+        // }
+
+        // function add(a,b){
+        //     return a+b;
+        // }
+        // function sub(a,b){
+        //     return a-b;
+        // }
+        // console.log(calculator(5,3,add));
+        // console.log(calculator(8,2,sub));
+
+        // function homeWork(callback){
+        //     console.log("doing homework...");
+        //     setTimeout(function(){
+        //         callback();
+        //     },3000);
+        // }
+        // function dance(){
+        //     console.log("dancing");
+        // }
+
+        // homeWork(dance);
+
+        // let arr = [2,3,5,8,9,10];
+        // function greater(num){
+        //     return num>5;
+        // } 
+        // console.log(arr.find(greater));
+
+        // let arr = [1,2,3,4,5];
+        // function callBack(ele,i,arr){
+        //     console.log(ele+" "+i+" "+arr);
+        // }
+        // arr.forEach(callBack);
+
+        let arr = [2,3,4,5,8,9,10];
+        // function greater(ele){
+        //     return ele>5;
+        // }
+        // let filter = arr.filter(greater);
+        // console.log(filter);
+
+        let filter = arr.filter((ele)=>ele>5);
+        console.log(filter);
+
+        let newarr = arr.map((ele)=>ele*2);
+        console.log(newarr);
+     </script>
+</body>
+</html>

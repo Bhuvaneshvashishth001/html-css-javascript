@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <h1>Job Application Form</h1>
+        <br>
+        <label for="name">Enter Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br>
+        <br>
+        <label for="email">Enter Email: </label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br>
+        <br>
+        <label for="phone">Enter Phone Number: </label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        <br>
+        <br>
+        <label for="resume">Upload Resume: </label>
+        <input type="file" id="resume" name="resume">
+        <br>
+        <br>
+        <label for="Experience">Experience: </label>
+        <select name="experience" id="experience">
+            <option value="">Select Experience</option>
+            <option value="0">Fresher</option>
+            <option value="1">1 years</option>
+            <option value="2">2 years</option>
+            <option value="3">3 years</option>
+            <option value="4+">4+ years</option>
+        </select>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Backend">Backend Developer: </label>
+            <input type="checkbox" id="Backend" name="Backend" value="Backend Developer">
+            <br>
+            <br>
+            <label for="Frontend">Frontend Developer: </label>
+            <input type="checkbox" id="Frontend" name="Frontend" value="Frontend Developer">
+            <br>
+            <br>
+            <label for="Fullstack">Fullstack Developer: </label>
+            <input type="checkbox" id="Fullstack" name="Fullstack" value="Fullstack Developer">
+            <br>
+            <br>
+            <label for="DSA">Data Structures and Algorithms: </label>
+            <input type="checkbox" id="DSA" name="DSA" value="Data Structures and Algorithms">
+        </fieldset>
+        <br>
+    
+        <label for="Education">Education: </label>
+        <select name="Education" id="Education">
+            <option value="">Select Education</option>
+            <option value="Bachelor's">Bachelor's</option>
+            <option value="Master's">Master's</option>
+            <option value="PhD">PhD</option>
+        </select>
+        <br>
+        <br>
+        <h3>Availability :-</h3>
+        <label for="time">Full Time:</label>
+        <input type="radio" id="full-time" name="availability" value="Full Time">
+        <br>
+        <br>
+        <label for="time">Part Time:</label>
+        <input type="radio" id="part-time" name="availability" value="Part Time">
+        <br>
+        <br>
+        <input type="submit" value="Submit Application">
+
+    </form>
+</body>
+</html>
