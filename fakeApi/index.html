@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input{
+            width: 120px;
+            position: absolute;
+            border: 2px solid black;
+            top: 12px;
+            right: 0;
+            text-size-adjust: 10px;
+            text-align: left;
+        }
+        .contain{
+            margin: 50px;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .product {
+            border: 1px solid #ddd;
+            padding: 3px;
+            width: calc(22% - 10px);
+            min-width: 140px;
+            min-height: 190px;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: 12px;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            max-height: 110px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto 6px;
+        }
+        .product h5 {
+            font-size: 12px;
+            margin: 0 0 6px;
+            height: 2.4em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .product strong {
+            font-size: 13px;
+            display: inline-block;
+            margin-bottom: 6px;
+            background-color: lightgray;
+            padding: 3px 5px;
+            border-radius: 4px;
+        }
+        .product p {
+            font-size: 11px;
+            line-height: 1.2;
+            height: 3.6em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 0;
+        }
+        .product .add-to-cart {
+            display: inline-block;
+            width: 100%;
+            background-color: lightblue;
+            color: #000;
+            text-align: center;
+            border: none;
+            padding: 5px;
+            margin-top: 8px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .product .add-to-cart:hover {
+            background-color: #87cefa;
+        }
+        .form-label{
+            font-size: 14px;
+            text-align: center;
+        }
+        #filter{
+            text-align: center;
+        }
+        #button{
+            text-align: center;
+            background-color: lightblue;
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <strong>🛒 Shopping</strong>
+        <input class="input" type="text" placeholder="Search products" >
+    </nav>
+    <div class="contain">
+        <p class="form-label">
+            <label  for="category">filter by category :</label>
+                <select name="filter by category" id="category">
+                    <option value="All">All</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="men's clothing">Men's Clothing</option>
+                    <option value="women's clothing">Women's Clothing</option>
+                    <option value="jewelery">Jewelry</option>
+                </select>
+            </p>
+            <div class="container">
+            </div>
+        </div>
+    <button id="button">Load More</button>
+    <script src="script.js"></script>
+</body>
+</html>
